@@ -2,7 +2,7 @@ package day02.practice;
 
 
 public class Logger {
-	public static void debug (String msg) {
+	public  void debug (String msg) {
 		System.out.println("DEBUG: " + msg);
 	}
 	public static void info (String msg) {
@@ -31,7 +31,8 @@ public class Logger {
 	}
 	
 	public static void main(String[] args) {
-		debug("Debbugging");
+		Logger log = new Logger();
+		log.debug("Debbugging");
 		info("Informating");
 		error("erroring");
 		debug(7);
