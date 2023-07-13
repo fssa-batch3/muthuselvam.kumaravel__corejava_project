@@ -20,11 +20,14 @@ public class User {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-User user1 = new User("Muthu","007","Muthuselvam.kumaravel@fssa.freshworks.com");
-System.out.println(user1.name+" "+user1.password+" "+user1.emailId);
+		
+		User user1 = new User("Muthu","007","Muthuselvam.kumaravel@fssa.freshworks.com");
+		
+		System.out.println(user1.name+" "+user1.password+" "+user1.emailId);
 
-User user2 = new User();
-System.out.println(user2.name+" "+user2.password+" "+user2.emailId);
+		User user2 = new User();
+		
+		System.out.println(user2.name+" "+user2.password+" "+user2.emailId);
 	}
 	
 }
