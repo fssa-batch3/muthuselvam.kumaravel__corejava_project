@@ -1,10 +1,14 @@
 package day05.practice;
 
-public class practice01 {
+class Account  {
+	String accNo;
+	double balance;
+	
+}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+//Create an implementation of the below Interface
+public interface ATM {
+    boolean deposit(Account account, double amount);
+    boolean withdraw(Account account,double amount) throws Exception;
+    double getBalance();
 }
