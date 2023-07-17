@@ -85,19 +85,22 @@ class Giraffe extends Animal {
 }
 
 public class AnimalSolved {
-	public static void main(String[] args) {
-		Lion lion1 = new Lion();
-		lion1.setName("Simba");
-		Lion lion2 = new Lion();
-		lion2.setName("Leo");
-		System.out.println(lion1.getName());
-		lion1.sleeps();
-		Giraffe giraffe1 = new Giraffe();
-		giraffe1.setName("Jack");
-		System.out.println(giraffe1.getName());
-		giraffe1.sleeps();
+	 public static void main(String[] args) {
+	        Lion lion1 = new Lion("Simba");
+			lion1.setName("Simba");
+	        lion1.setAge(10); // setAge() method was not defined in Lion; it is inherited from Animal
+	        System.out.println(lion1.getName());
+	        lion1.speaks();
 
-		lion1.setAge(10); // setAge() method was not defined in Lion; it is inherited from Animal
-		lion1.speaks();
-	}
+	        Lion lion2 = new Lion();
+	        lion2.setName("Leo");
+	        System.out.println(lion1.getName());
+	        lion1.sleeps();
+
+	        Giraffe giraffe1 = new Giraffe();
+	        giraffe1.setName("Jack");
+	        System.out.println(giraffe1.getName());
+	        giraffe1.sleeps();
+
+	    }
 }
