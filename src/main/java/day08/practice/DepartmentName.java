@@ -12,10 +12,10 @@ public class DepartmentName {
 
 		input = input.trim().toLowerCase();
 
-		// Split the input into individual names using comma as the separator
+		
 		String[] names = input.split(", ");
 
-		// Create a HashMap to store the count of each name
+		
 		HashMap<String, Integer> department = new HashMap<>();
 
 		for (String name : names) {
