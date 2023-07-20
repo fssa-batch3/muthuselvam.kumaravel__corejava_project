@@ -4,7 +4,7 @@ public class TestStudent {
 
 	public static void main(String[] args) {
 		Department dept1 = new Department("ECE",565);
-		Student student1 = new Student("Arunkumar",2,dept1);
+		Student student1 = new Student("Muthuselvam",2,dept1);
 		
 		System.out.println("Student name: "+student1.name);
 		System.out.println("Student Id: "+student1.id);
