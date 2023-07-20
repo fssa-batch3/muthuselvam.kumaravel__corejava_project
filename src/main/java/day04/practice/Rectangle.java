@@ -29,16 +29,19 @@ public class Rectangle {
 	}
 	
 	
-	public void displayRectangle() {
+	public void Rectangle(int length ,int breadth) {
 		System.out.println(length*breadth);
 	}
+	
+	
+	
 
 
 }
 
 class Square extends Rectangle{
 	
-	private void displaySquare() {
+	private void Square(int length) {
 		System.out.println(getLength()*getLength());
 	}
 	
@@ -46,10 +49,11 @@ class Square extends Rectangle{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Square square = new Square();
+		Rectangle rectangle = new Rectangle();
 		square.setLength(10);
-		square.displaySquare();
+		square.Square(10);
 		square.setBreadth(5);
-		square.displayRectangle();
+		rectangle.Rectangle(10,5);
 	}
 
 	
