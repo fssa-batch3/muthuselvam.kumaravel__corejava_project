@@ -29,7 +29,9 @@ public class Rectangle {
 	}
 	
 	
-	public void Rectangle(int length ,int breadth) {
+	public  Rectangle(int length ,int breadth) {
+		this.length = length;
+		this.breadth = breadth;
 		System.out.println(length*breadth);
 	}
 	
@@ -41,15 +43,17 @@ public class Rectangle {
 
 class Square extends Rectangle{
 	
-	private void Square(int length) {
+	public Square(int length) {
+		setLength(length);
 		System.out.println(length*length);
 	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Square square = new Square(10);
-		Rectangle rectangle = new Rectangle(10,5);
+//		Square square = new Square(10);
+		Rectangle rectangle = new Rectangle( 10, 5);
+	
 		
 //		square.setLength(10);
 //		square.Square(10);
