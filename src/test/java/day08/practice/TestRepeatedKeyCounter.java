@@ -1,9 +1,34 @@
 package day08.practice;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
 public class TestRepeatedKeyCounter {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter the string: ");
+		String input = scanner.nextLine();
+
+	
+		input = input.trim().toLowerCase();
+
+		
+		String[] names = input.split(", ");
+
+
+		HashMap<String, Integer> nameCount = new HashMap<>();
+
+	
+		for (String name : names) {
+			nameCount.put(name, nameCount.getOrDefault(name, 0) + 1);
+		}
+		
+		System.out.println(nameCount); 
+
+		
+		nameCount.forEach((key, value) -> System.out.println(key + ": " + value));
 
 	}
 
