@@ -1,15 +1,15 @@
 package day10.practice;
 
-public class InvalidEmailException extends Exception {
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	public InvalidEmailException(String str) {
-		super(str);
-
+class InvalidEmailException extends Exception {
+	public InvalidEmailException(String msg) {
+		super(msg);
 	}
 
+	public InvalidEmailException(Throwable te) {
+		super(te);
+	}
+
+	public InvalidEmailException(String msg, Throwable te) {
+		super(msg, te);
+	}
 }
